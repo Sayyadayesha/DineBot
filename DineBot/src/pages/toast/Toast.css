@@ -1,0 +1,54 @@
+/* src/pages/toast/Toast.css */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toast p {
+  margin: 0 0 10px; /* Space between message and buttons */
+  font-size: 16px;
+  text-align: center;
+}
+
+.toast-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+.toast-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-button {
+  background-color: #2196F3; /* Blue background */
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336; /* Red background */
+  color: white;
+}
+
+.confirm-button:hover {
+  background-color: #0b7dda; /* Darker blue */
+}
+
+.cancel-button:hover {
+  background-color: #da190b; /* Darker red */
+}

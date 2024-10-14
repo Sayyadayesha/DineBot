@@ -1,0 +1,86 @@
+/* Menu.css */
+.menu {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .menu-item {
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .menu-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  
+  .food-container {
+    margin-top: 20px;
+  }
+  
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .food-item {
+    margin: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .food-item:hover {
+    transform: scale(1.05); /* Scale on hover */
+  }
+  
+  .food-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  .order-confirmation,
+  .order-success {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9c74f; /* Light yellow background */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center;
+  }
+  
+  .order-confirmation button,
+  .order-success button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .order-confirmation button:hover,
+  .order-success button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  

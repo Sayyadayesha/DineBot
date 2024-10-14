@@ -1,0 +1,102 @@
+/* src/components/chatbot/Chatbot.css */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f4f8, #d9e7ff); /* Gradient background */
+    padding: 20px;
+}
+
+.chat-window {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff; /* White background for chat */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    animation: slideIn 0.5s ease-out; /* Slide-in animation */
+    margin-bottom: 200px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 12px 16px; /* Adjusted padding for better appearance */
+    border-radius: 20px; /* Rounded corners */
+    position: relative;
+    max-width: 80%; /* Limit message width */
+}
+
+.message.user {
+    background-color: #a3d9a5; /* Light green for user messages */
+    align-self: flex-end; /* Align user messages to the right */
+    border-bottom-right-radius: 0; /* Remove right bottom border radius */
+}
+
+.message.bot {
+    background-color: #b3cde0; /* Light blue for bot messages */
+    align-self: flex-start; /* Align bot messages to the left */
+    border-bottom-left-radius: 0; /* Remove left bottom border radius */
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for input area */
+    border-top: 1px solid #e1e1e1; /* Top border for separation */
+}
+
+.input-container input {
+    flex: 1;
+    padding: 12px 15px; /* Adjusted padding for input */
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    margin-right: 10px;
+    transition: border 0.3s; /* Transition for border color */
+}
+
+.input-container input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.input-container button {
+    padding: 12px 15px; /* Adjusted button padding */
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    background-color: #007bff; /* Button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; /* Transition for button */
+}
+
+.input-container button:hover {
+    background-color: #b36b00; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.input-container button:active {
+    transform: translateY(1px); /* Press down effect on active */
+}
